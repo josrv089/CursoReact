@@ -23,5 +23,5 @@ Una vez se tengan las herramientas necesarias para el desarrollo en react, se co
 - npm install @babel/core @babel/preset-env @babel/preset-react babel-loader --save-dev
 - npm install babel-plugin-transform-class-properties --save-dev
 - npm install webpack webpack-cli html-webpack-plugin html-loader --save-dev
-  --
+   
 - npm install webpack-dev-server --save-dev
