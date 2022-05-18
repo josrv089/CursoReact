@@ -15,3 +15,13 @@ Una vez se tengan las herramientas necesarias para el desarrollo en react, se co
 - Creando una aplicación de next con create-next-app@latest 
 
 
+
+
+## Creando la aplicación manualmente: 
+- npm init
+- npm install react react-dom --save
+- npm install @babel/core @babel/preset-env @babel/preset-react babel-loader --save-dev
+- npm install babel-plugin-transform-class-properties --save-dev
+- npm install webpack webpack-cli html-webpack-plugin html-loader --save-dev
+  --
+- npm install webpack-dev-server --save-dev
