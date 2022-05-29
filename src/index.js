@@ -1,13 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { UserProvider } from "./UserContext";
+import { BrowserRouter as Router } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+let user = {
+  nombre: "Josue",
+  apellido: "Rivas",
+  rol:"User"
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <UserProvider value={user}>
+        <App />
+      </UserProvider>
+    </Router>
   </React.StrictMode>
 );
 
