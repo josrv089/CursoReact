@@ -1,0 +1,132 @@
+.App {
+  background-color: #282c34;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-body{
+  color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition-duration: .4s;
+
+}
+
+.button:disabled{
+  background-color: dimgray;
+  border:1px solid dimgray;
+  color: white;
+}
+
+.button:hover:disabled{
+  background-color: dimgray;
+  border:1px solid dimgray;
+  color: white;
+}
+
+.button-green {
+  background-color: #4CAF50;
+}
+
+.button-green:hover {
+  background-color: white ;
+  color: #4CAF50;
+  border: 2px solid #4CAF50; 
+}
+
+.button-red {
+  background-color: #f44336;
+}
+
+.button-red:hover {
+  background-color: white ;
+  color: #f44336;
+  border: 2px solid #f44336; 
+}
+
+.button-blue {
+  background-color: #008CBA;
+}
+.button-blue:hover {
+  background-color: white ; 
+  color: #008CBA;
+  border: 2px solid #008CBA; 
+}
+
+
+.field-error{
+  color: #f44336;
+  font-size: 12px;
+}
+
+.label{
+  font-size: 16px;
+  width: 150px;
+  display: inline-block;
+}
+
+.input {
+  border-radius: 10px;
+  width: 200px;
+}
+
+
+.error {
+  color: #f44336;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.succes{
+  color: #4CAF50;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
