@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  AppBar,
+  Button,
+  ButtonBase,
+  ButtonGroup,
+  Checkbox,
+  Divider,
+  Fab,
+  FormControl,
+  FormControlLabel,
+  FormLabel,
+  IconButton,
+  Radio,
+  RadioGroup,
+  Slider,
+  TextField,
+  Toolbar,
+  Typography,
+} from "@mui/material";
+import { borderRadius, Box } from "@mui/system";
+import "./App.css";
+import AddIcon from "@mui/icons-material/Add";
+import Componentes from "./components/Componentes";
+import TopHeader from "./components/TopHeader";
+import Navegacion from "./components/Navegacion";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navegacion></Navegacion>
+
+      
     </div>
   );
 }

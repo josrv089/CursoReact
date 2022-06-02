@@ -1,13 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router } from "react-router-dom";
+import { ThemeProvider } from "@emotion/react";
+import { createTheme } from "@mui/material/styles";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const theme = createTheme({
+  palette: {
+    primary: {
+      main:"#1565c0",
+      darker:""
+    },
+    secundary: {
+      main:"#ffea00"
+    },
+    error: {
+      main: "#1ff",
+    },
+  }
+});
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <ThemeProvider theme={theme} >
+        <App />
+      </ThemeProvider>
+    </Router>
   </React.StrictMode>
 );
 
