@@ -16,6 +16,9 @@ import Principal from "./Principal";
 import Componentes from "./Componentes";
 import Formulario from "./Formulario";
 import FormularioFormik from "./FormularioFormik";
+import Tabla from "./Tabla";
+import TablaGrid from "./TablaGrid";
+import TablaGridMui from "./TablaGridMui";
 
 function Navegacion() {
   const drawerWidth = 240;
@@ -87,6 +90,38 @@ function Navegacion() {
                 </ListItem>
               </Link>
 
+              <Link to="/tabla" style={{textDecoration: "none", color: "black"}}>
+                <ListItem disablePadding>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <InboxIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Tabla"></ListItemText>
+                  </ListItemButton>
+                </ListItem>
+              </Link>
+
+              <Link to="/tablaGrid" style={{textDecoration: "none", color: "black"}}>
+                <ListItem disablePadding>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <InboxIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Tabla Grid"></ListItemText>
+                  </ListItemButton>
+                </ListItem>
+              </Link>
+
+              <Link to="/tablaGridMui" style={{textDecoration: "none", color: "black"}}>
+                <ListItem disablePadding>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <InboxIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Data Grid MUI "></ListItemText>
+                  </ListItemButton>
+                </ListItem>
+              </Link>
 
             </List>
           </Drawer>
@@ -99,6 +134,9 @@ function Navegacion() {
         <Route path="/componentes" element={<Componentes />}></Route>
         <Route path="/formulario" element={<Formulario />}></Route>
         <Route path="/formularioFormik" element={<FormularioFormik />}></Route>
+        <Route path="/tabla" element={<Tabla />}></Route>
+        <Route path="/tablaGrid" element={<TablaGrid />}></Route>
+        <Route path="/tablaGridMui" element={<TablaGridMui />}></Route>
       </Routes>
     </>
   );
