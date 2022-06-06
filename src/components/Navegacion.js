@@ -15,6 +15,7 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import Principal from "./Principal";
 import Componentes from "./Componentes";
 import Formulario from "./Formulario";
+import FormularioFormik from "./FormularioFormik";
 
 function Navegacion() {
   const drawerWidth = 240;
@@ -75,6 +76,17 @@ function Navegacion() {
                 </ListItem>
               </Link>
 
+              <Link to="/formularioFormik" style={{textDecoration: "none", color: "black"}}>
+                <ListItem disablePadding>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <InboxIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Formulario Con Formik"></ListItemText>
+                  </ListItemButton>
+                </ListItem>
+              </Link>
+
 
             </List>
           </Drawer>
@@ -86,6 +98,7 @@ function Navegacion() {
         <Route path="/principal" element={<Principal />}></Route>
         <Route path="/componentes" element={<Componentes />}></Route>
         <Route path="/formulario" element={<Formulario />}></Route>
+        <Route path="/formularioFormik" element={<FormularioFormik />}></Route>
       </Routes>
     </>
   );

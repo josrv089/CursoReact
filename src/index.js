@@ -16,9 +16,7 @@ const theme = createTheme({
     secundary: {
       main:"#ffea00"
     },
-    error: {
-      main: "#1ff",
-    },
+    
   }
 });
 

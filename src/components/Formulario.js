@@ -26,7 +26,7 @@ function Formulario() {
 
       <Container maxWidth="md">
         <form onSubmit={handleSubmit}>
-          <Grid container spacing={5}>
+          <Grid container spacing={1}>
             <Grid item xs={8}>
               <FormControl fullWidth sx={{ m: 1 }} variant="standard">
                 <TextField
